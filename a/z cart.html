@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ALL PRODUCTS - MUTO</title>
+    <link rel="stylesheet" href="style.css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <style>
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 20px;
+      }
+      th,
+      td {
+        padding: 10px;
+        text-align: center;
+        border: 1px solid #ccc;
+      }
+      button {
+        padding: 5px 10px;
+        margin: 0 2px;
+      }
+    </style>
+  </head>
+  <h1>Keranjang Belanja</h1>
+  <table id="cartTable">
+    <thead>
+      <tr>
+        <th>Produk</th>
+        <th>Harga</th>
+        <th>Jumlah</th>
+        <th>Total</th>
+        <th>Aksi</th>
+      </tr>
+    </thead>
+    <tbody></tbody>
+  </table>
+  <h2 id="grandTotal">Total: Rp. 0</h2>
+
+  <script>
+    let cart = JSON.parse(localStorage.getItem("cart")) || [];
+    const tbody = document.querySelector("#cartTable tbody");
+
+    function renderCart() {
+      tbody.innerHTML = "";
+      let grandTotal = 0;
+
+      cart.forEach((item, index) => {
+        const total = item.price * item.qty;
+        grandTotal += total;
+
+        const row = document.createElement("tr");
+        row.innerHTML = `
+          <td>${item.name}</td>
+          <td>Rp. ${item.price.toLocaleString()}</td>
+          <td>
+            <button onclick="changeQty(${index}, -1)">-</button>
+            ${item.qty}
+            <button onclick="changeQty(${index}, 1)">+</button>
+          </td>
+          <td>Rp. ${total.toLocaleString()}</td>
+          <td><button onclick="removeItem(${index})">Hapus</button></td>
+        `;
+        tbody.appendChild(row);
+      });
+
+      document.getElementById("grandTotal").textContent = "Total: Rp. " + grandTotal.toLocaleString();
+      localStorage.setItem("cart", JSON.stringify(cart));
+    }
+
+    function changeQty(index, delta) {
+      cart[index].qty += delta;
+      if (cart[index].qty <= 0) {
+        cart.splice(index, 1);
+      }
+      renderCart();
+    }
+
+    function removeItem(index) {
+      if (confirm("Yakin ingin menghapus produk ini?")) {
+        cart.splice(index, 1);
+        renderCart();
+      }
+    }
+
+    renderCart();
+  </script>
+  </body>
+</html>

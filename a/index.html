@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MUTO</title>
+    <link rel="stylesheet" href="style.css/style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+
+  </head>
+  <body>
+    <div class="header">
+      <div class="container">
+        <div class="navbar">
+          <div class="logo">
+            <a href="index.html"><img src="img/1.png" width="125px" /></a>
+          </div>
+          <nav>
+            <ul id="MenuItems">
+              <li><a href="#home">Home</a></li>
+              <li><a href="products.html">Products</a></li>
+             <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+
+
+              <li><a href="account.html">Account</a></li>
+            </ul>
+          </nav>
+          <a href="cart.html"
+            ><img src="images/cart.png" width="30px" height="30px"
+          /></a>
+          <img src="images/menu.png" class="menu-icon" onclick="menutoggle()" />
+        </div>
+
+        <div class="row" id="home">
+          <div class="col-2">
+            <h1>
+              MARI MOSHING BERSAMA MUTO
+            </h1>
+            <p>
+              KAOS YANG SUPER LEMBUT, ELASTIS PASTINYA ENAK UNTUK PERGERAKAN<br />
+              DIJAMIN MENANG MOSHING DEH KALAU PAKE KAOS MUTO
+            </p>
+            <a href="" class="btn">Explore Now &#8594;</a>
+          </div>
+          <div class="col-2">
+            <img src="img/10.png" />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- featured categories -->
+    <div class="categories">
+      <div class="small-container">
+        <div class="row">
+          <div class="col-3">
+            <img src="img/model 2.jpg" />
+          </div>
+          <div class="col-3">
+            <img src="img/Desain tanpa judul (3).png" />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- featured products -->
+    <div class="small-container">
+      <h2 class="title">featured products</h2>
+      <div class="product-grid">
+        <div class="col-4">
+          <a href="product details.html"><img src="img/2.png" /></a>
+         <a href="product details.html"></a> <h4>DONT FUCK IT</h4></a>
+         <div class="rating"></div>
+         <p>Rp.130.000</p>
+         <button onclick="addToCart('DONT FUCK IT', 130000)">Add to Cart</button>
+         <div class="rating">
+           <i class="fa fa-star"></i>
+           <i class="fa fa-star"></i>
+           <i class="fa fa-star"></i>
+           <i class="fa fa-star"></i>
+           <i class="fa fa-star-o"></i>
+</div>
+
+        </div>
+        <div class="col-4">
+          <a href="detali 1.html"><img src="img/3.png" /></a>
+         <a href="detali 1.html"></a> <h4>CBGC</h4>
+          <div class="rating"></div></a>
+          <p>Rp.120.000</p>
+           <button onclick="addToCart('CBGC', 120000)">Add to Cart</button>
+          <div class="rating">
+  <i class="fa fa-star"></i>
+  <i class="fa fa-star"></i>
+  <i class="fa fa-star"></i>
+  <i class="fa fa-star"></i>
+  <i class="fa fa-star-half-o"></i>
+</div>
+
+        </div>
+        <div class="col-4">
+          <a href="detail 2.html"><img src="img/4.png" /></a>
+          <a href="detail 2.html"><h4>NIRVANA</h4></a>
+          <div class="rating"></div>
+          <p>Rp.150.000</p>
+           <button onclick="addToCart('NIRVANA', 150000)">Add to Cart</button>
+          <div class="rating">
+  <i class="fa fa-star"></i>
+  <i class="fa fa-star"></i>
+  <i class="fa fa-star"></i>
+  <i class="fa fa-star"></i>
+  <i class="fa fa-star-o"></i>
+</div>
+
+        </div>
+        <div class="col-4">
+          <a href="detail 3.html"><img src="img/5.png" /></a>
+         <a href="detail 3.html"> <h4>SLIPKNOT</h4></a>
+          <div class="rating"></div>
+          <p>Rp.120.000</p>
+           <button onclick="addToCart('SLIPKNOT', 120000)">Add to Cart</button>
+          <div class="rating">
+  <i class="fa fa-star"></i>
+  <i class="fa fa-star"></i>
+  <i class="fa fa-star"></i>
+  <i class="fa fa-star"></i>
+  <i class="fa fa-star"></i>
+</div>
+
+        </div>
+        <div class="col-4">
+         <a href="detail 4.html"> <img src="img/6.png" /></a>
+          <a href="detail 4.html"></a><h4>METALIC</h4></a>
+          <div class="rating"></div>
+          <p>Rp.140.000</p>
+           <button onclick="addToCart('METALIC', 140000)">Add to Cart</button>
+          <div class="rating">
+  <i class="fa fa-star"></i>
+  <i class="fa fa-star"></i>
+  <i class="fa fa-star"></i>
+  <i class="fa fa-star"></i>
+  <i class="fa fa-star-o"></i>
+</div>
+
+        </div>
+        <div class="col-4">
+         <a href="detail 5.html"> <img src="img/7.png" /></a>
+         <a href="detail 5.html"> <h4>GREEN DAY</h4></a>
+          <div class="rating"></div>
+          <p>Rp.130.000</p>
+          <button onclick="addToCart('GREEN DAY', 130000)">Add to Cart</button>
+          <div class="rating">
+  <i class="fa fa-star"></i>
+  <i class="fa fa-star"></i>
+  <i class="fa fa-star"></i>
+  <i class="fa fa-star"></i>
+  <i class="fa fa-star-half-o"></i>
+</div>
+
+        </div>
+
+        <div class="col-4">
+          <a href="detail 6.html"><img src="img/Desain tanpa judul (5).png" /></a>
+         <a href="detail 6.html"> <h4>NECKDEEP</h4></a>
+          <div class="rating"></div>
+          <p>Rp.130.000</p>
+           <button onclick="addToCart('NECKDEEP', 130000)">Add to Cart</button>
+          <div class="rating">
+  <i class="fa fa-star"></i>
+  <i class="fa fa-star"></i>
+  <i class="fa fa-star"></i>
+  <i class="fa fa-star-half-o"></i>
+  <i class="fa fa-star-o"></i>
+</div>
+
+        </div>
+        <div class="col-4">
+         <a href="detail 7.html"> <img src="img/11.png" /></a>
+         <a href="detail 7.html"> <h4>RAMONES</h4></a>
+          <div class="rating"></div>
+          <p>Rp.130.000</p>
+           <button onclick="addToCart('RAMONES', 130000)">Add to Cart</button>
+          <div class="rating">
+  <i class="fa fa-star"></i>
+  <i class="fa fa-star"></i>
+  <i class="fa fa-star"></i>
+  <i class="fa fa-star-half-o"></i>
+  <i class="fa fa-star-o"></i>
+</div>
+
+        </div>
+      </div>
+    </div>
+    <!-- offer -->
+  <div class="offer">
+  <div class="small-container" id="about">
+    <div class="offer-content">
+      <div class="offer-image">
+        <img src="img/Desain tanpa judul (6).png" class="offer-img" />
+      </div>
+      <div class="offer-text">
+        <p>Unleash your rage in raw, brutal style with our official metalhead tee.</p>
+        <h1>muto apparell</h1>
+        <small>Wearing this is more than fashion — it’s a tribute to distortion, chaos, and the raw spirit of metal</small>
+        <a href="#" class="btn">buy now &#8594;</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+    <!-- footer -->
+ <footer class="footer-metal">
+  <div class="footer-container">
+  <div class="footer-socials" id="contact">
+
+      <a href="https://www.instagram.com/ziddanlazuardiibr/" target="_blank">
+        <i class="fa fa-instagram"></i>
+      </a>
+      <a href="https://wa.me/6285314762770" target="_blank">
+        <i class="fa fa-whatsapp"></i>
+      </a>
+      <a href="https://www.facebook.com/ZiddanLazuardiIbrahim" target="_blank">
+        <i class="fa fa-facebook"></i>
+      </a>
+    </div>
+
+    <p class="footer-credit">
+      © 2025 - Built with blood, riffs, and rage by <strong>Ziddan Lazuardi Ibrahim</strong>
+    </p>
+  </div>
+</footer>
+
+
+    <!-- js for toggle menu -->
+
+    <script>
+      var MenuItems = document.getElementById("MenuItems");
+      MenuItems.style.maxHeight = "0px";
+
+      function menutoggle() {
+        if (MenuItems.style.maxHeight == "0px") {
+          MenuItems.style.maxHeight = "200px";
+        } else {
+          MenuItems.style.maxHeight = "0px";
+        }
+      }
+    </script>
+
+    <script>
+  // Simpan cart di localStorage
+  let cart = JSON.parse(localStorage.getItem("cart")) || [];
+
+  function addToCart(productName, price) {
+    // Cari apakah produk sudah ada di cart
+    const existingProduct = cart.find(item => item.name === productName);
+    if (existingProduct) {
+      existingProduct.qty += 1;
+    } else {
+      cart.push({ name: productName, price: price, qty: 1 });
+    }
+
+    localStorage.setItem("cart", JSON.stringify(cart));
+    alert(productName + " telah ditambahkan ke keranjang!");
+  }
+</script>
+
+
+  </body>
+</html>

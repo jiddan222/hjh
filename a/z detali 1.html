@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ALL PRODUCTS - MUTO</title>
+    <link rel="stylesheet" href="style.css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="navbar">
+        <div class="logo">
+          <img src="img/1.png" width="125px" />
+        </div>
+        <nav>
+          <ul id="MenuItems">
+            <li><a href="">Home</a></li>
+            <li><a href="">Products</a></li>
+            <li><a href="">About</a></li>
+            <li><a href="">Contact</a></li>
+            <li><a href="">Account</a></li>
+          </ul>
+        </nav>
+        <img src="images/cart.png" width="30px" height="30px" />
+        <img src="images/menu.png" class="menu-icon" onclick="menutoggle()" />
+      </div>
+    </div>
+
+    <!-- single product details -->
+    <div class="small-container single-product">
+      <div class="row">
+        <div class="col-2">
+          <img src="img/3.png" width100% id="ProductImg" />
+          <div class="small-img-row">
+            <div class="small-img-col">
+              <img src="img/3.png" widht100% class="small-img" />
+            </div>
+            <div class="small-img-col">
+              <img
+                src="images/4551370b-b2cc-4315-99e2-bd4915191f5f.jpg"
+                widht100%
+                class="small-img"
+              />
+            </div>
+            <div class="small-img-col">
+              <img
+                src="images/5e903291-4356-455d-bd32-b7a3df29c200.jpg"
+                widht100%
+                class="small-img"
+              />
+            </div>
+            <div class="small-img-col">
+              <img
+                src="images/7f66fb17-c5e7-4c45-a785-15cca513aad3.jpg"
+                widht100%
+                class="small-img"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="col-2">
+          <p>home / t shirt by muto</p>
+          <h1>CBGB</h1>
+          <h4>Rp.120.00</h4>
+          <select>
+            <option>select size</option>
+            <option>XXL</option>
+            <option>XL</option>
+            <option>L</option>
+            <option>M</option>
+            <option>S</option>
+          </select>
+          <input type="number" value="1" />
+           <a href="#" class="btn" onclick="addToCart('CBGB', 120000)"
+            >Add To Cart</a
+          >
+          <h3>Product Detail</h3>
+          <br />
+          KAOS SUPER LEMBUT ENAK BANGET BUAT MOSHING, GASIN MOSH PIT
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- TITLE -->
+    <div class="small-container">
+      <div class="row row-2">
+        <h2>Related Product</h2>
+        <p>View more</p>
+      </div>
+    </div>
+    <!-- PRODUCT -->
+    <div class="small-container">
+      <div class="row">
+        <div class="col-4">
+          <img src="img/2.png" />
+          <h4>DONT FUCK IT</h4>
+          <div class="rating"></div>
+          <p>Rp.130.000</p>
+          <button onclick="addToCart('DONT FUCK IT', 130000)">
+            Add to Cart
+          </button>
+        </div>
+        <div class="col-4">
+          <img src="img/3.png" />
+          <h4>CBGB</h4>
+          <div class="rating"></div>
+          <p>Rp.120.000</p>
+          <button onclick="addToCart('CBGB', 120000)">Add to Cart</button>
+        </div>
+        <div class="col-4">
+          <img src="img/4.png" />
+          <h4>NIRVANA</h4>
+          <div class="rating"></div>
+          <p>Rp.150.000</p>
+          <button onclick="addToCart('NIRVANA', 150000)">Add to Cart</button>
+        </div>
+        <div class="col-4">
+          <img src="img/5.png" />
+          <h4>SLIPKNOT</h4>
+          <div class="rating"></div>
+          <p>Rp.120.000</p>
+          <button onclick="addToCart('SLIPKNOT', 120000)">Add to Cart</button>
+        </div>
+        <div class="col-4">
+          <img src="img/6.png" />
+          <h4>METALIC</h4>
+          <div class="rating"></div>
+          <p>Rp.140.000</p>
+          <button onclick="addToCart('METALIC', 140000)">Add to Cart</button>
+        </div>
+        <div class="col-4">
+          <img src="img/7.png" />
+          <h4>GREEN DAY</h4>
+          <div class="rating"></div>
+          <p>Rp.130.000</p>
+          <button onclick="addToCart('GREEN DAY', 130000)">Add to Cart</button>
+        </div>
+
+        <div class="col-4">
+          <img src="img/Desain tanpa judul (5).png" />
+          <h4>NECKDEEP</h4>
+          <div class="rating"></div>
+          <p>Rp.130.000</p>
+          <button onclick="addToCart('NECKDEEP', 130000)">Add to Cart</button>
+        </div>
+        <div class="col-4">
+          <img src="img/11.png" />
+          <h4>RAMONES</h4>
+          <div class="rating"></div>
+          <p>Rp.130.000</p>
+          <button onclick="addToCart('RAMONES', 130000)">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+    <!-- footer -->
+    <footer class="footer-metal">
+      <div class="footer-container">
+        <div class="footer-socials">
+          <a
+            href="https://www.instagram.com/ziddanlazuardiibr/"
+            target="_blank"
+          >
+            <i class="fa fa-instagram"></i>
+          </a>
+          <a href="https://wa.me/6285314762770" target="_blank">
+            <i class="fa fa-whatsapp"></i>
+          </a>
+          <a
+            href="https://www.facebook.com/ZiddanLazuardiIbrahim"
+            target="_blank"
+          >
+            <i class="fa fa-facebook"></i>
+          </a>
+        </div>
+
+        <p class="footer-credit">
+          © 2025 - Built with blood, riffs, and rage by
+          <strong>Ziddan Lazuardi Ibrahim</strong>
+        </p>
+      </div>
+    </footer>
+    <!-- js for toggle menu -->
+
+    <script>
+      var MenuItems = document.getElementById("MenuItems");
+      MenuItems.style.maxHeight = "0px";
+
+      function menutoggle() {
+        if (MenuItems.style.maxHeight == "0px") {
+          MenuItems.style.maxHeight = "200px";
+        } else {
+          MenuItems.style.maxHeight = "0px";
+        }
+      }
+    </script>
+
+    <!-- js for product gallery -->
+    <script>
+      var ProductImg = document.getElementById("ProductImg");
+      var SmallImg = document.getElementsByClassName("small-img");
+
+      SmallImg[0].onclick = function () {
+        ProductImg.src = SmallImg[0].src;
+      };
+      SmallImg[1].onclick = function () {
+        ProductImg.src = SmallImg[1].src;
+      };
+      SmallImg[2].onclick = function () {
+        ProductImg.src = SmallImg[2].src;
+      };
+      SmallImg[3].onclick = function () {
+        ProductImg.src = SmallImg[3].src;
+      };
+    </script>
+    <script>
+      let cart = JSON.parse(localStorage.getItem("cart")) || [];
+
+      function addToCart(productName, price) {
+        const existing = cart.find((item) => item.name === productName);
+        if (existing) {
+          existing.qty += 1;
+        } else {
+          cart.push({ name: productName, price: price, qty: 1 });
+        }
+        localStorage.setItem("cart", JSON.stringify(cart));
+        alert(productName + " ditambahkan ke keranjang!");
+      }
+    </script>
+  </body>
+</html>
